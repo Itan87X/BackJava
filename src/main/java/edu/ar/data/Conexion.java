@@ -8,7 +8,7 @@ public class Conexion {
 
   private static final String URL = "jdbc:mysql://localhost:3306/RegistroUsuarios";
   private static final String USER = "root";
-  private static final String PASSWORD = "s0yN4t";
+  private static final String PASSWORD = ""; //no muestro la password porque estará público
 
   public static Connection getConexion() throws SQLException {
     try {
