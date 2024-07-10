@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const usuariosSection = document.getElementById("usuarios");
   
     function loadUsuariosList() {
-      fetch("http://localhost:8080/BackJava24/users") // Ajusta la URL según tu configuración
+      fetch("http://localhost:8080/BackJava24/users")
         .then(response => response.json())
         .then(data => {
           data.forEach(usuario => {
