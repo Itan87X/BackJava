@@ -8,11 +8,12 @@ jobs:
 
     steps:
     - name: Check out repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up JDK 17
-      uses: actions/setup-java@v2
+      uses: actions/setup-java@v3
       with:
+        distribution: 'temurin' # Puedes cambiar 'temurin' por 'zulu' u otra distribución si prefieres
         java-version: '17'
 
     - name: Build with Maven
